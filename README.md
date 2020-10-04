@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/oidpeuyrdw5rhyj6?svg=true)](https://ci.appveyor.com/project/MKSInc/ahj-hw-4-testing-1-cc-validator-2-puppeteer-3-jsdo)
+### [Gh-page](https://mksinc.github.io/AHJ-hw.-4-Testing.-1-CC-Validator.-2-Puppeteer.-3-JSDOM/)
 # 4. Домашнее задание к лекции «Организация тестирования»
 
 Правила сдачи задания:
