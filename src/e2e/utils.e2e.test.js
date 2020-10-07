@@ -1,13 +1,14 @@
 import puppetteer from 'puppeteer';
+import path from 'path';
 
 jest.setTimeout(30000); // default puppeteer timeout
 describe('Card Validator form', () => {
   let browser = null;
   let page = null;
-  const baseUrl = 'http://localhost:9000';
+  const baseUrl = path.resolve(__dirname, '../../dist/index.html');
   beforeAll(async () => {
     browser = await puppetteer.launch({
-      // headless: true, // show gui
+      // headless: false, // show gui
       // slowMo: 100,
       // devtools: true, // show devTools
     });
