@@ -21,7 +21,7 @@ test_script:
   - yarn start &
   - sleep 3
   - yarn e2e
-  - build
+  - yarn build
 
 environment:
   my_variable:
