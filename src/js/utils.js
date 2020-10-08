@@ -18,12 +18,11 @@ export default function identifyCardName(cardNumber) {
 
 export function luhnCheck(cardNumber) {
   const len = cardNumber.length;
-  const parity = len % 2;
   let sum = 0;
 
   for (let i = 0; i < len; i += 1) {
     let digit = parseInt(cardNumber[i], 10);
-    if (i % 2 === parity) {
+    if ((len - i) % 2 === 0) {
       digit *= 2;
       if (digit > 9) digit -= 9;
     }

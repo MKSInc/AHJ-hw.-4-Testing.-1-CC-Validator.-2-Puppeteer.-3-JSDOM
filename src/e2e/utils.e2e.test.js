@@ -8,7 +8,7 @@ describe('Card Validator form', () => {
   const baseUrl = path.resolve(__dirname, '../../dist/index.html');
   beforeAll(async () => {
     browser = await puppetteer.launch({
-      // headless: false, // show gui
+      // headless: true, // show gui
       // slowMo: 100,
       // devtools: true, // show devTools
     });
