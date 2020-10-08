@@ -5,7 +5,7 @@ jest.setTimeout(30000); // default puppeteer timeout
 describe('Card Validator form', () => {
   let browser = null;
   let page = null;
-  const baseUrl = path.resolve(__dirname, '../../dist/index.html');
+  const baseUrl = path.resolve(__dirname, '../dist/index.html');
   beforeAll(async () => {
     browser = await puppetteer.launch({
       // headless: true, // show gui
